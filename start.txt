@@ -1,0 +1,27 @@
+The code in this project file follows the following path:
+1.)  Open an article
+2.)  Find the first link in the article
+3.)  Following that link
+4.)  Record the link in the wiki_chain data structure
+5.)  Repeat the process till final link is visited or program repeats the same link
+
+The program should end with the while loop:
+1.)  If it reaches at the philosophy page
+2.)  If we reach the page that is already visited
+3.)  If the program goes more than 25 iterations
+4.)  If we reach a page of no links
+
+Pseudo Code:
+page  = a random starting page
+while title of page isn't philosophy and we haven't discovered a cycle yet then
+1.)  Append the page to the article_chain
+2.)  Download the page content
+3.)  Find the first link of that content
+4.)  page = that link
+5.)  pause for a second
+
+Loop of while continue_crawl(article_chain, target_url) works:
+1.)  Download the last article chain using request
+2.)  Find the first link in that html using bs4
+3.)  Add the first link to the article_chain
+4.)  Delay for about 2 seconds
